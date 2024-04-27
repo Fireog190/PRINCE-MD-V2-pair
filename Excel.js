@@ -96,7 +96,7 @@ app.use("/qrcode", async(req, res) => {
        await fs.emptyDirSync(__dirname+'/auth_info_baileys'); 
     }
   }
-}
+})
  
 
 app.use('/pair',async (req, res, next) => {
