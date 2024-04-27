@@ -26,7 +26,7 @@ const PORT = process.env.PORT || 8000;
 //let  code = require('./pair');
 require('events').EventEmitter.defaultMaxListeners = 500;
 app.use("/scan", async(req, res, next) => {
-res.sendFile(__path + './qrcode.html')
+res.sendFile(__path + '/qrcode.html')
 })
 app.use('/pair',async (req, res, next) => {
 res.sendFile(__path + '/pair.html')
