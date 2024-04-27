@@ -1,15 +1,17 @@
 {
-    "description": "qr",
-    "main": "./index.js",
-  "engines" : { 
+    "name": "Taira-Tech"
+    "description": "Taira-Makino session ID and web",
+    "main": "Excel.js",
+    "engines" : { 
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
     },
     "scripts": {
     "start": "node Excel.js"
   },
-  "author": "GiftedTech",
-  "license": "GPL-3.0 license",
+  "keywords": ["baileysQr","MdLogin", "Makino-Md","whatsapp-bot","BotWhatsapp","whatsappMdLogin","adiwajshing/baileys","baileys-md-qr","multi-device-qr","md-qr","bot-qr","baileysQrScanner","wabot" ],
+  "author": "Frederick(Taira-Makino)",
+  "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.5.0",
     "maher-zubair-baileys": "^6.6.5",
