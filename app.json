@@ -1,9 +1,9 @@
 {
-    "name": "WEB Qr/Pair",
+    "name": "Taira-Makino-web",
     "description": "I'm Web QR by Gifted tech & Excel",
-    "logo": "https://i.ibb.co/HtT3vjm/goku-gif-3.gif",
-    "repository": "https://github.com/Xcelsama",
-    "keywords": ["@Xcelsama"],
+    "logo": "https://telegra.ph/file/9fd9e372ed366eca3adb3.jpg",
+    "repository": "https://github.com/anonphoenix007",
+    "keywords": ["Anonphoenix007"],
     "success_url": "/", 
     "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
     "env": {      
