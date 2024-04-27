@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.5.0",
+    "fs-extra": "latest",
     "maher-zubair-baileys": "^6.6.5",
     "qrcode": "^1.5.3",
     "awesome-phonenumber": "^2.64.0",
