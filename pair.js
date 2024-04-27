@@ -51,32 +51,29 @@ router.get('/', async (req, res) => {
                 } = s;
                 if (connection == "open") {
                 await delay(5000);
-                let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
+                /*let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Excel.sendMessage(Pair_Code_By_Excel.user.id, { text: '' + b64data });
-
+               let session = await Pair_Code_By_Excel.sendMessage(Pair_Code_By_Excel.user.id, { text: '' + b64data });*/
                let STAR_MD_TEXT = `
-*_Pair Code Connected by Excel_*
-*_Made With HTML📡_*
-______________________________________
 ╔════◇
-║ *『 WOW YOU CHOSE STAR-MD』*
-║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
-╚══════════════════════╝
+║ *『 Arigato Senpai ,you CHOSE MAKINO-MD-V2 』*
+║ _You completed first deployment step._
+╚════════════════════════╝
 ╔═════◇
-║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ *Channel:* _https://whatsapp.com/channel/0029Va9wmuz8F2pGIURwmo0m_
-║❒ *Owner:* _https://wa.me/2347045035241_
-║❒ *Repo:* _https://github.com/Xcelsama/STAR-MD-V2_
-║❒ *WaGroup:* _https://chat.whatsapp.com/EmP3syvou18HrZk6R6nTAK_
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaJmfmTDJ6H7CmuBss0o_
-║❒ *Other Repo:* _https://github.com/Xcelsama/STAR-MD_
-╚══════════════════════╝ 
-_____________________________________
-
-_Don't Forget To Give Star To My Repo_`
- await Pair_Code_By_Excel_Xcelsama.sendMessage(Pair_Code_By_Excel_Xcelsama.user.id,{text:STAR_MD_TEXT},{quoted:session})
+║       『••• MAKINO-MD •••』
+║ *Channel:* _https://whatsapp.com/channel/0029VaaSaXD23n3ZEognud1V_
+║ *Support GC:* _https://chat.whatsapp.com/BRDE2Yqsj9iAkTxhnuI1AL_
+║ *Support GC2:* _https://chat.whatsapp.com/KEg0G3UUs1G39ikdyfF5Pm_
+║ *Owner:* _https://wa.me/2347080968564_
+║ *Note :*_Do not provide your SESSION_ID to_
+║ _anyone otherwise that can access your data_
+╚════════════════════════╝`
+ let CREDS = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
+ const xeonses = await  Pair_Code_By_Excel_Xcelsama.sendMessage(user, { document: CREDS, mimetype: `application/json`, fileName: `creds.json` });
+ let session_id = await Pair_Code_By_Excel_Xcelsama.sendMessage(user, xeonses);      //SENDING 'base64' SESSION ID TO USER NUMBER
+ await Pair_Code_By_Excel_Xcelsama.sendMessage(user, session_id);
+ await Pair_Code_By_Excel_Xcelsama.sendMessage(Pair_Code_By_Excel_Xcelsama.user.id,{text:STAR_MD_TEXT},{quoted:session_id})
  
 
         await delay(100);
