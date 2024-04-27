@@ -56,7 +56,7 @@ app.use("/qrcode", async(req, res) => {
           const xeonses = await  Smd.sendMessage(user, { document: CREDS, mimetype: `application/json`, fileName: `creds.json` });
           let session_id = await smd.sendMessage(user, xeonses); 
           await Smd.sendMessage(user, session_id);
-          let msgsss = await Smd.sendMessage(user, { text:  Scan_Id });*/
+          //let msgsss = await Smd.sendMessage(user, { text:  Scan_Id });
           await Smd.sendMessage(user, { text: MESSAGE } , { quoted : msgsss });
           await delay(1000);
           try{ await fs.emptyDirSync(__dirname+'/auth_info_baileys'); }catch(e){}
