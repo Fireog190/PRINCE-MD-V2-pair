@@ -22,7 +22,7 @@ let MESSAGE =  `
 __path = process.cwd()
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 8000;
-let server = require('./qr'),
+let server = require('./qr');
 let  code = require('./pair');
 require('events').EventEmitter.defaultMaxListeners = 500;
 //app.use('/qr', server);
