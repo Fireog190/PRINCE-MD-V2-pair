@@ -29,7 +29,7 @@ app.use("/scan", async(req, res, next) => {
 res.sendFile(__path + '/qrcode.html')
 })
 app.use("/heroku", async(req, res, next) => {
-    res.sendFile(__path + './heroku.html')
+    res.sendFile(__path + '/heroku.html')
 })
 app.use('/pair',async (req, res, next) => {
 res.sendFile(__path + '/pair.html')
