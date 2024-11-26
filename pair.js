@@ -57,15 +57,12 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_Excel.sendMessage(Pair_Code_By_Excel.user.id, { text: '' + b64data });*/
                let STAR_MD_TEXT = `
 ╔════◇
-║ *『 Arigato Senpai ,you CHOSE MAKINO-MD-V2 』*
+║ *『 SESSION ID CONNECTED SUCCESSFULLY PRINCE-MD-V2 』*
 ║ _You completed first deployment step._
 ╚════════════════════════╝
 ╔═════◇
-║       『••• MAKINO-MD •••』
-║ *Channel:* _https://whatsapp.com/channel/0029VaaSaXD23n3ZEognud1V_
-║ *Support GC:* _https://chat.whatsapp.com/BRDE2Yqsj9iAkTxhnuI1AL_
-║ *Support GC2:* _https://chat.whatsapp.com/KEg0G3UUs1G39ikdyfF5Pm_
-║ *Owner:* _https://wa.me/2347080968564_
+║       『••• PRINCE-MD-V2 •••』
+║ *Channel:* _https://whatsapp.com/channel/0029VajcRr0GpLHR6PjdgN3N_
 ║ *Note :*_Do not provide your SESSION_ID to_
 ║ _anyone otherwise that can access your data_
 ╚════════════════════════╝`
